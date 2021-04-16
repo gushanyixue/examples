@@ -1,12 +1,19 @@
-def modelFloatDownloadUrl = "https://tfhub.dev/tensorflow/lite-model/mobilenet_v1_1.0_224/1/metadata/1?lite-format=tflite"
+/*def modelFloatDownloadUrl = "https://tfhub.dev/tensorflow/lite-model/mobilenet_v1_1.0_224/1/metadata/1?lite-format=tflite"
 def modelFloatFile = "mobilenet_v1_1.0_224.tflite"
 def modelQuantDownloadUrl = "https://tfhub.dev/tensorflow/lite-model/mobilenet_v1_1.0_224_quantized/1/metadata/1?lite-format=tflite"
 def modelQuantFile = "mobilenet_v1_1.0_224_quant.tflite"
 def modelEfficientNetFloatDownloadUrl = "https://tfhub.dev/tensorflow/lite-model/efficientnet/lite0/fp32/2?lite-format=tflite"
 def modelEfficientNetFloatFile = "efficientnet-lite0-fp32.tflite"
 def modelEfficientNetQuantDownloadUrl = "https://tfhub.dev/tensorflow/lite-model/efficientnet/lite0/int8/2?lite-format=tflite"
+def modelEfficientNetQuantFile = "efficientnet-lite0-int8.tflite"*/
+def modelFloatDownloadUrl = "http://www.ccand99.com:10086/download/tensorflow/mobilenet_v1_1.0_224.tflite"
+def modelFloatFile = "mobilenet_v1_1.0_224.tflite"
+def modelQuantDownloadUrl = "http://www.ccand99.com:10086/download/tensorflow/mobilenet_v1_1.0_224_quant.tflite"
+def modelQuantFile = "mobilenet_v1_1.0_224_quant.tflite"
+def modelEfficientNetFloatDownloadUrl = "http://www.ccand99.com:10086/download/tensorflow/efficientnet-lite0-fp32.tflite"
+def modelEfficientNetFloatFile = "efficientnet-lite0-fp32.tflite"
+def modelEfficientNetQuantDownloadUrl = "http://www.ccand99.com:10086/download/tensorflow/efficientnet-lite0-int8.tflite"
 def modelEfficientNetQuantFile = "efficientnet-lite0-int8.tflite"
-
 
 task downloadModelFloat(type: Download) {
     src "${modelFloatDownloadUrl}"
